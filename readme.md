@@ -8,6 +8,7 @@ uic_covid_database
 
 # Author(s)
 Annsh Agrawaal (aagraw26)
+
 Sahil Gedam 
 
 # Database description
