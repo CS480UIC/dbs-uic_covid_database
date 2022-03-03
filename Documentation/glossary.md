@@ -34,10 +34,44 @@ Description: Payment info if the individual has a reservation.
 Synonms: Appointment <br>
 Description: Reserving a time for a COVID test. 
 
-#### Entity 6: uic_covid_database
+#### Entity 7: uic_covid_database
 
 Synonms: Cases <br>
 Description: Main database in which we have the statistics of COVID cases at UIC. 
 
+#### Entity 8: login_user
+
+Synonms: login, credentials <br>
+Description: Users login information. 
 
 ## Relationship
+
+student_info-has-uic_classes
+
+Maxima: many - many
+Minima: one - one
+
+student_info-has-student_contact_info
+
+Maxima: one - one
+Minima: one - zero
+
+student_info-has-vaccination_card
+
+Maxima: one - one
+Minima: one - zero
+
+student_info-has-payment
+
+Maxima: one - many
+Minima: one - one
+
+student_info-has-reservation
+
+Maxima: one - many
+Minima: one - one
+
+uic_covid_database-has-student_info
+
+Maxima : one - many
+Minima: one - one
