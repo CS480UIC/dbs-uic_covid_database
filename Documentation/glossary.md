@@ -48,30 +48,34 @@ Description: Users login information.
 
 student_info-has-uic_classes
 
+~~~
 Maxima: many - many
 Minima: one - one
-
+~~~
 student_info-has-student_contact_info
 
+~~~
 Maxima: one - one
 Minima: one - zero
+~~~
 
 student_info-has-vaccination_card
-
+~~~
 Maxima: one - one
 Minima: one - zero
-
+~~~
 student_info-has-payment
-
+~~~
 Maxima: one - many
 Minima: one - one
-
+~~~
 student_info-has-reservation
-
+~~~
 Maxima: one - many
 Minima: one - one
-
+~~~
 uic_covid_database-has-student_info
-
+~~~
 Maxima : one - many
 Minima: one - one
+~~~
