@@ -146,7 +146,7 @@ Entity 1: student_info
     `quarantine_end` 		DATE NOT NULL,
     `last_test_result` 		INT NOT NULL,
     `vaccine_status` 		INT NOT NULL,
-    `recent_travel_status`  INT NOT NULL
+    `recent_travel_status`  	INT NOT NULL
 
 Entity 2: student_contact_info
     `UIN` 			INT UNSIGNED NOT NULL AUTO_INCREMENT,
