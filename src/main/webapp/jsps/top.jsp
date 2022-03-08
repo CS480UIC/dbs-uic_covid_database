@@ -15,6 +15,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	here hello 
 	-->
 <style type="text/css">
 	body {
@@ -31,7 +32,7 @@
   </head>
   
   <body>
-<h1 style="text-align: center;">Sahil Gedam</h1>
+<h1 style="text-align: center;">Sahil Pravin Gedam</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
