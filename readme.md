@@ -79,3 +79,31 @@ This system will be open source and we could not find such an application.
 
 ## CRUD for Delete UIC_Covid_database
 ![5](https://user-images.githubusercontent.com/60448610/158508932-727939c9-9c48-43a4-a0c6-2e7aa8f8bef0.jpg)
+
+# CRUD for Student Contact Info
+![1](https://user-images.githubusercontent.com/21062057/158508648-717167f1-3a42-48fd-9d4a-74decc0d841d.png)
+![2](https://user-images.githubusercontent.com/21062057/158508758-5d4ed052-bea3-4d76-9260-c9dc41779149.png)
+![3](https://user-images.githubusercontent.com/21062057/158508769-78f29dac-547b-4dd1-8ddc-1d35db94b9a0.png)
+![4](https://user-images.githubusercontent.com/21062057/158508774-f3e151fc-25e2-47e0-ae3d-5a7fa38e3a20.png)
+![5](https://user-images.githubusercontent.com/21062057/158508777-ac7f1fb9-faed-4ebd-a1e3-74b2476f4e44.png)
+
+# CRUD for UIC Classes
+![1](https://user-images.githubusercontent.com/21062057/158508834-372b6295-f931-493f-858f-eaa9b8d25051.png)
+![2](https://user-images.githubusercontent.com/21062057/158508842-4e5f8cd1-97a8-405b-9c7a-095c4c12e139.png)
+![3](https://user-images.githubusercontent.com/21062057/158508844-13114cb2-7a80-4a8b-b97f-030c20995602.png)
+![4](https://user-images.githubusercontent.com/21062057/158508845-63840cfc-afa8-48c0-863f-e69709d5646d.png)
+![5](https://user-images.githubusercontent.com/21062057/158508849-6372d030-ad90-4b99-bc24-9121f398b8af.png)
+
+# CRUD for Student Info
+![1](https://user-images.githubusercontent.com/21062057/158508879-26a2ab8e-5b5c-42bb-bcb6-a350403ab64c.png)
+![2](https://user-images.githubusercontent.com/21062057/158508890-5da2156e-f048-49b7-bdb9-4c91331b7d0e.png)
+![3](https://user-images.githubusercontent.com/21062057/158508891-26434220-74de-4c7e-91fa-6b4a289afaca.png)
+![4](https://user-images.githubusercontent.com/21062057/158508892-015fa1e0-cfe4-442e-89f2-a91a71dc5b0f.png)
+![5](https://user-images.githubusercontent.com/21062057/158508893-1ac659c9-8347-402b-95bc-13ca527731c9.png)
+
+#CRUD for Vaccination Card
+![1](https://user-images.githubusercontent.com/21062057/158508942-3309d2c0-c8f8-4ac5-bec8-98a7ece935aa.png)
+![2](https://user-images.githubusercontent.com/21062057/158508948-2362a5ab-3561-41be-abd5-04dec0893f5e.png)
+![3](https://user-images.githubusercontent.com/21062057/158508949-4cdf3124-7d0f-42b0-a3f8-2a4d2303d54c.png)
+![4](https://user-images.githubusercontent.com/21062057/158508950-3cf59f8d-b851-41b4-86c9-f2766d897f7a.png)
+![5](https://user-images.githubusercontent.com/21062057/158508951-1bd63f4b-4d57-48d3-a924-51a2187044bb.png)
