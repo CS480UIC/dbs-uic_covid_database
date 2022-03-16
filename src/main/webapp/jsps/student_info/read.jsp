@@ -22,15 +22,15 @@
   
 
   <body>
-  <h1>Read Entity1</h1>
+  <h1>Read student_info</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/Entity1ServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	
-	uin    :<input type="text" name="uin" value="${form.uin }"/>
+	UIN    :<input type="text" name="uin" value="${form.uin }"/>
 	<span style="color: red; font-weight: 900">${errors.uin }</span>
 	<br/>
-	crn    :<input type="text" name="crn" value="${form.crn }"/>
+	CRN    :<input type="text" name="crn" value="${form.crn }"/>
 	<span style="color: red; font-weight: 900">${errors.crn }</span>
 	<br/>
 	rec_status    :<input type="text" name="rec_status" value="${form.rec_status }"/>

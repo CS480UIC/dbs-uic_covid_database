@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>student_info Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
+  <h1>student_info Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 
 	UIN    :<input type="text" name="uin" value="${form.uin }"/>

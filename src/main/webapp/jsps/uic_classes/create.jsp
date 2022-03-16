@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>uic_classes Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
+  <h1>uic_classes Create</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 
 	CRN    :<input type="text" name="crn" value="${form.crn }"/>

@@ -24,9 +24,9 @@
   <h1>Read student_info Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	uin    :<input type="text" name="uin" value="${entity1.uin }" disabled/>
+	UIN   :<input type="text" name="uin" value="${entity1.uin }" disabled/>
 	<br/>
-	crn：<input type="text" name="crn" value="${entity1.crn }" disabled/>
+	CRN：<input type="text" name="crn" value="${entity1.crn }" disabled/>
 	<br/>
 	rec_status	：<input type="text" name="rec_status" value="${entity1.rec_status }" disabled/>
 	<br/>

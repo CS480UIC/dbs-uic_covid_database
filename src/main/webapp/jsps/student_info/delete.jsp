@@ -22,7 +22,7 @@
   
   
   <body>
-  <h1>Delete Entity1</h1>
+  <h1>Delete student_info</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	
