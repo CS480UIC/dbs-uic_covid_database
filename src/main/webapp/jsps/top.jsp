@@ -48,6 +48,7 @@
 			<a href="<c:url value='/jsps/login_user/menu.jsp'/>" target="body">CRUD for Login User</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/reservation/menu.jsp'/>" target="body">CRUD for Reservation</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/payment/menu.jsp'/>" target="body">CRUD for Payment</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/uic_covid_database/menu.jsp'/>" target="body">CRUD for UIC Covid Database</a> |&nbsp;&nbsp;
 
 		</c:otherwise>
 	</c:choose>
