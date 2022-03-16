@@ -43,13 +43,17 @@
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp;
+<%-- 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp; --%>
 			<a href="<c:url value='/jsps/login_user/menu.jsp'/>" target="body">CRUD for Login User</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/reservation/menu.jsp'/>" target="body">CRUD for Reservation</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/payment/menu.jsp'/>" target="body">CRUD for Payment</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/reservation/menu.jsp'/>" target="body">CRUD for Reservation</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/student_contact_info/menu.jsp'/>" target="body">CRUD for Student Contact Info</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/student_info/menu.jsp'/>" target="body">CRUD for Student Info</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/uic_classes/menu.jsp'/>" target="body">CRUD for UIC Classes</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/uic_covid_database/menu.jsp'/>" target="body">CRUD for UIC Covid Database</a> |&nbsp;&nbsp;
-
+			<a href="<c:url value='/jsps/vaccination_card/menu.jsp'/>" target="body">CRUD for Vaccination Card</a> |&nbsp;&nbsp;
+			
 		</c:otherwise>
 	</c:choose>
 
