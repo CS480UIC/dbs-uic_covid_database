@@ -4,6 +4,15 @@ CREATE DATABASE uic_covid_database;
 
 use uic_covid_database;
 
+CREATE TABLE user
+(
+  
+  username VARCHAR(50) primary key,
+  `password` VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL
+);
+
+
 CREATE TABLE uic_classes
 (
 UIN INT NOT NULL auto_increment,
