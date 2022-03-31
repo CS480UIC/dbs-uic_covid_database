@@ -22,7 +22,7 @@ PRIMARY KEY (UIN)
 
 CREATE TABLE student_info
 (
-UIN INT UNSIGNED NOT NULL AUTO_INCREMENT,
+UIN INT NOT NULL AUTO_INCREMENT,
 CRN INT NOT NULL,
 rec_status INT NOT NULL,
 housing_status INT NOT NULL,
@@ -42,7 +42,7 @@ UIN INT NOT NULL,
 Name VARCHAR(255) NOT NULL,
 first_dose DATE NOT NULL,
 second_dose DATE NOT NULL,
-booster_dose DATE,
+booster_dose INT,
 name_of_vaccine VARCHAR(255) NOT NULL,
 
 PRIMARY KEY(UIN)
