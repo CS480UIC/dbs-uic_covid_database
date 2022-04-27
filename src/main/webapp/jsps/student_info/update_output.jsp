@@ -49,9 +49,9 @@
 	
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/student_infoServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
+		<input type="hidden" name="uin" value="${entity1.uin }"/>
 				
 	UIN：<input type="password" name="uin" value="${form.uin }"/>
 	<span style="color: red; font-weight: 900">${errors.uin }</span>

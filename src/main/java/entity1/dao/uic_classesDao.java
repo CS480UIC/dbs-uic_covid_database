@@ -17,7 +17,7 @@ import entity1.domain.Entity1;
 /**
  * DDL functions performed in database
  */
-public class Entity1Dao {
+public class uic_classesDao {
 	
 	/**
 	 * user name to connect to the database 

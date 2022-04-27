@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete student_contact_info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,23 +21,24 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete student_contact_info</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="student_contact_info" value="${entity1.student_contact_info }"/>
+	<form action="<c:url value='/student_contact_infoServletDelete'/>" method="post">
+		<input type="hidden" name="method" value="delete"/>
+		<input type="hidden" name="uin" value="${entity1.uin }"/>
+			
+		UIN    :<input type="text" name="uin" value="${entity1.uin }" disabled/>
+		<br/>
+		Phone Number：<input type="text" name="phone_number" value="${entity1.phone_number }" disabled/>
+		<br/>
+		Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+		<br/>
+		Emergency Contact	：<input type="text" name="emergency_contact" value="${entity1.emergency_contact }" disabled/>
+		<br/>
 		
-	UIN    :<input type="text" name="uin" value="${entity1.uin }" disabled/>
-	<br/>
-	Phone Number：<input type="text" name="phone_number" value="${entity1.phone_number }" disabled/>
-	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
-	<br/>
-	Emergency Contact	：<input type="text" name="emergency_contact" value="${entity1.emergency_contact }" disabled/>
-	<br/>
-	
-	<input type="submit" value="Delete student_contact_info"/>
-</form>
+		
+		<input type="submit" value="Delete student_contact_info"/>
+	</form>
 
 </body>
 </html>

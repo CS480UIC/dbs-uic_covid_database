@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Update student_contact_info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,24 +23,24 @@
   
   <body>
   <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
-
-	<input type="hidden" name="method" value="search"/>
+	<form action="<c:url value='/student_contact_infoServletUpdate'/>" method="post">
 	
-	Update UIN  :<input type="text" name="uin" value="${form.uin}"/>
-	<span style="color: red; font-weight: 900">${errors.uin }</span>	
-	<br/>
-	Update Phone Number   :<input type="text" name="phone_number" value="${form.phone_number}"/>
-	<span style="color: red; font-weight: 900">${errors.phone_number }</span>	
-	<br/>
-	Update Email   :<input type="text" name="email" value="${form.email}"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>	
-	<br/>
-	Update Emergency Contact   :<input type="text" name="emergency_contact" value="${form.emergency_contact}"/>
-	<span style="color: red; font-weight: 900">${errors.emergency_contact}</span>	
-	<br/>
-	
-	<input type="submit" value="Update student_contact_info"/>
-</form>
+		<input type="hidden" name="method" value="search"/>
+		
+		Update UIN  :<input type="text" name="uin" value="${form.uin}"/>
+		<span style="color: red; font-weight: 900">${errors.uin }</span>	
+		<br/>
+	<%-- 	Update Phone Number   :<input type="text" name="phone_number" value="${form.phone_number}"/>
+		<span style="color: red; font-weight: 900">${errors.phone_number }</span>	
+		<br/>
+		Update Email   :<input type="text" name="email" value="${form.email}"/>
+		<span style="color: red; font-weight: 900">${errors.email }</span>	
+		<br/>
+		Update Emergency Contact   :<input type="text" name="emergency_contact" value="${form.emergency_contact}"/>
+		<span style="color: red; font-weight: 900">${errors.emergency_contact}</span>	
+		<br/> --%>
+		
+		<input type="submit" value="Update student_contact_info"/>
+	</form>
   </body>
 </html>

@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import entity1.dao.Entity1Dao;
+import entity1.dao.uic_classesDao;
 import entity1.domain.Entity1;
 
 
@@ -36,7 +36,7 @@ public class Entity1ServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method = request.getParameter("method");
-		Entity1Dao entity1Dao = new Entity1Dao();
+		uic_classesDao entity1Dao = new uic_classesDao();
 		Entity1 entity1 = null;
 		if(method.equals("search"))
 		{

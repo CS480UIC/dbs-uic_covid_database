@@ -23,12 +23,13 @@
   <body>
   <h1>Read uic_classes</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/uic_classesServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	
-	CRN    :<input type="text" name="crn" value="${form.crn }"/>
+<%-- 	CRN    :<input type="text" name="crn" value="${form.crn }"/>
 	<span style="color: red; font-weight: 900">${errors.crn }</span>
-	<br/>
+	<br/> --%>
+	
 	UIN of classes    :<input type="text" name="uin_of_classes" value="${form.uin_of_classes }"/>
 	<span style="color: red; font-weight: 900">${errors.uin_of_classes }</span>
 	<br/>

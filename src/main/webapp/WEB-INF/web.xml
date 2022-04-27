@@ -82,6 +82,108 @@
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>student_contact_infoServletCreate</display-name>
+    <servlet-name>student_contact_infoServletCreate</servlet-name>
+    <servlet-class>student_contact_info.web.servlet.student_contact_infoServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_contact_infoServletCreate</servlet-name>
+    <url-pattern>/student_contact_infoServletCreate</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>student_contact_infoServletRead</display-name>
+    <servlet-name>student_contact_infoServletRead</servlet-name>
+    <servlet-class>student_contact_info.web.servlet.student_contact_infoServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_contact_infoServletRead</servlet-name>
+    <url-pattern>/student_contact_infoServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>student_contact_infoServletDelete</display-name>
+    <servlet-name>student_contact_infoServletDelete</servlet-name>
+    <servlet-class>student_contact_info.web.servlet.student_contact_infoServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_contact_infoServletDelete</servlet-name>
+    <url-pattern>/student_contact_infoServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>student_contact_infoServletUpdate</display-name>
+    <servlet-name>student_contact_infoServletUpdate</servlet-name>
+    <servlet-class>student_contact_info.web.servlet.student_contact_infoServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_contact_infoServletUpdate</servlet-name>
+    <url-pattern>/student_contact_infoServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>student_infoServletCreate</display-name>
+    <servlet-name>student_infoServletCreate</servlet-name>
+    <servlet-class>student_info.web.servlet.student_infoServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_infoServletCreate</servlet-name>
+    <url-pattern>/student_infoServletCreate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>student_infoServletRead</display-name>
+    <servlet-name>student_infoServletRead</servlet-name>
+    <servlet-class>student_info.web.servlet.student_infoServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_infoServletRead</servlet-name>
+    <url-pattern>/student_infoServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>student_infoServletDelete</display-name>
+    <servlet-name>student_infoServletDelete</servlet-name>
+    <servlet-class>student_info.web.servlet.student_infoServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_infoServletDelete</servlet-name>
+    <url-pattern>/student_infoServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>student_infoServletUpdate</display-name>
+    <servlet-name>student_infoServletUpdate</servlet-name>
+    <servlet-class>student_info.web.servlet.student_infoServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student_infoServletUpdate</servlet-name>
+    <url-pattern>/student_infoServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>uic_classesServletRead</display-name>
+    <servlet-name>uic_classesServletRead</servlet-name>
+    <servlet-class>uic_classes.web.servlet.uic_classesServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uic_classesServletRead</servlet-name>
+    <url-pattern>/uic_classesServletRead</url-pattern>
+  </servlet-mapping>
+  
+  
+  
   
   <servlet>
     <description></description>

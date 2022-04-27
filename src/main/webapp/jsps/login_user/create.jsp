@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create a User</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/student_contact_infoServletCreate'/>" method="post">
 
 	UIN    :<input type="text" name="UIN" value="${form.UIN }"/>
 	<span style="color: red; font-weight: 900">${errors.UIN }</span>

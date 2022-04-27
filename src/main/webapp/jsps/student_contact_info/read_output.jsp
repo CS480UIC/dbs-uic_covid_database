@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read student_contact_info Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,7 +22,7 @@
   
 
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read student_contact_info Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 

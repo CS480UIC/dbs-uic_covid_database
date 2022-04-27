@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity1</title>
+    <title>Read student_contact_info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,32 +22,14 @@
   
   <body>
   <h1>Read student_contact_info</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
-	
-	<input type="hidden" name="method" value="regist"/>
-	
-	UIN    :<input type="text" name="uin" value="${form.uin }"/>
-	<span style="color: red; font-weight: 900">${errors.uin }</span>
-	<br/>
-	Phone Number    :<input type="text" name="phone_number" value="${form.phone_number }"/>
-	<span style="color: red; font-weight: 900">${errors.phone_number }</span>
-	<br/>
-	Email    :<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	Emergency Contact    :<input type="text" name="emergency_contact" value="${form.emergency_contact }"/>
-	<span style="color: red; font-weight: 900">${errors.emergency_contact }</span>
-	<br/>
-	
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
-	
-	<input type="submit" value="Read student_contact_info"/>
-</form>
+	<p style="color: red; font-weight: 900">${msg }</p>
+	<form action="<c:url value='/student_contact_infoServletRead'/>" method="post">
+		<input type="hidden" name="method" value="regist"/>
+		
+		UIN    :<input type="text" name="uin" value="${form.uin }"/>
+		<span style="color: red; font-weight: 900">${errors.uin }</span>
+		<br/>
+		<input type="submit" value="Read student_contact_info"/>
+	</form>
   </body>
 </html>

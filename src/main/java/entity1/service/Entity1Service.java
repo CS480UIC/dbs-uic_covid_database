@@ -1,7 +1,7 @@
 package entity1.service;
 
 
-import entity1.dao.Entity1Dao;
+import entity1.dao.uic_classesDao;
 import entity1.domain.Entity1;
 
 /**
@@ -10,7 +10,7 @@ import entity1.domain.Entity1;
  *
  */
 public class Entity1Service {
-	private Entity1Dao entity1Dao = new Entity1Dao();
+	private uic_classesDao entity1Dao = new uic_classesDao();
 	
 	/**
 	 * register a Entity1

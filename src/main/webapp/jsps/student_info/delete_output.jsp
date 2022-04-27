@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete student_info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,9 +24,9 @@
   <body>
   <h1>Delete student_info</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/student_infoServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="student_info" value="${entity1.student_info }"/>
+	<input type="hidden" name="uin" value="${entity1.uin}"/>
 		
 	UIN    :<input type="text" name="uin" value="${entity1.uin }" disabled/>
 	<br/>

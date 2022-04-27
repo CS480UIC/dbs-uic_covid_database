@@ -22,7 +22,7 @@
   
   <body>
   <h1>student_contact_info Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/student_contact_infoServletCreate'/>" method="post">
 	
 	UIN:<input type="text" name="uin" value="${form.uin}"/>
 	<span style="color: red; font-weight: 900">${errors.uin}</span>
