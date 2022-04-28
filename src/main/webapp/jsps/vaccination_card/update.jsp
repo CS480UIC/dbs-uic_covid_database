@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/vaccination_cardServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	
 	Update UIN   :<input type="text" name="UIN" value="${form.UIN }"/>
