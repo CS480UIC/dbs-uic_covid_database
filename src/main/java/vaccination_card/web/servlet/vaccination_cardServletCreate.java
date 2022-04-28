@@ -54,7 +54,9 @@ public class vaccination_cardServletCreate extends HttpServlet {
 		form.setName(info.get(1));
 		form.setFirst_dose(java.sql.Date.valueOf(info.get(2)));
 		form.setSecond_date(java.sql.Date.valueOf(info.get(3)));
+
 		form.setBooster_date(Integer.parseInt(info.get(4)));
+
 		form.setName_of_vaccine(info.get(5));
 		
 		try {

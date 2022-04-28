@@ -17,7 +17,9 @@ public class vaccination_card {
 	private String Name; 
 	private Date first_dose;
 	private Date second_dose;
+
 	private Integer booster_dose; 
+
 	private String name_of_vaccine;
 	
 	public Integer getUIN() {
@@ -44,10 +46,12 @@ public class vaccination_card {
 	public void setSecond_date(Date second_date) {
 		this.second_dose = second_date;
 	}
+
 	public Integer getBooster_date() {
 		return booster_dose;
 	}
 	public void setBooster_date(Integer booster_date) {
+
 		this.booster_dose = booster_date;
 	}
 	public String getName_of_vaccine() {

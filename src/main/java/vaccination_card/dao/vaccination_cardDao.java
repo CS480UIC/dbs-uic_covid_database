@@ -46,7 +46,9 @@ public class vaccination_cardDao {
 		    		entity1.setName(resultSet.getString("Name"));
 		    		entity1.setFirst_dose(java.sql.Date.valueOf(resultSet.getString("first_dose")));
 		    		entity1.setSecond_date(java.sql.Date.valueOf(resultSet.getString("second_dose")));
+
 		    		entity1.setBooster_date(Integer.parseInt(resultSet.getString("booster_dose")));
+
 		    		entity1.setName_of_vaccine(resultSet.getString("name_of_vaccine"));
 		    	}
 		    }
@@ -76,7 +78,9 @@ public class vaccination_cardDao {
 			preparestatement.setString(2,form.getName());
 			preparestatement.setDate(3,form.getFirst_dose());
 			preparestatement.setDate(4,form.getSecond_date());
+
 			preparestatement.setInt(5,form.getBooster_date());
+
 			preparestatement.setString(6,form.getName_of_vaccine());
 			
 		    preparestatement.executeUpdate();
