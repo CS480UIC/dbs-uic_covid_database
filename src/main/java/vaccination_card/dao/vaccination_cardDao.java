@@ -78,7 +78,6 @@ public class vaccination_cardDao {
 			preparestatement.setDate(4,form.getSecond_date());
 			preparestatement.setInt(5,form.getBooster_date());
 			preparestatement.setString(6,form.getName_of_vaccine());
-			
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
