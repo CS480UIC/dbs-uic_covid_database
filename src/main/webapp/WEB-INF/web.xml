@@ -182,7 +182,49 @@
     <url-pattern>/uic_classesServletRead</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <description></description>
+    <display-name>vaccination_cardServletCreate</display-name>
+    <servlet-name>vaccination_cardServletCreate</servlet-name>
+    <servlet-class>vaccination_card.web.servlet.vaccination_cardServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vaccination_cardServletCreate</servlet-name>
+    <url-pattern>/vaccination_cardServletCreate</url-pattern>
+  </servlet-mapping>
   
+   <servlet>
+    <description></description>
+    <display-name>vaccination_cardServletRead</display-name>
+    <servlet-name>vaccination_cardServletRead</servlet-name>
+    <servlet-class>vaccination_card.web.servlet.vaccination_cardServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vaccination_cardServletRead</servlet-name>
+    <url-pattern>/vaccination_cardServletRead</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>vaccination_cardServletDelete</display-name>
+    <servlet-name>vaccination_cardServletDelete</servlet-name>
+    <servlet-class>vaccination_card.web.servlet.vaccination_cardServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vaccination_cardServletDelete</servlet-name>
+    <url-pattern>/vaccination_cardServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>vaccination_cardServletUpdate</display-name>
+    <servlet-name>vaccination_cardServletUpdate</servlet-name>
+    <servlet-class>vaccination_card.web.servlet.vaccination_cardServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vaccination_cardServletUpdate</servlet-name>
+    <url-pattern>/vaccination_cardServletUpdate</url-pattern>
+  </servlet-mapping>
   
   
   <servlet>

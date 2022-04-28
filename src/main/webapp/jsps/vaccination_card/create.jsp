@@ -22,7 +22,7 @@
 
   <body>
   <h1>vaccination_card Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/vaccination_cardServletCreate'/>" method="post">
 
 	UIN    :<input type="text" name="UIN" value="${form.UIN }"/>
 	<span style="color: red; font-weight: 900">${errors.UIN }</span>
