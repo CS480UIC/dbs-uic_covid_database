@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>vaccination_card Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,12 +22,12 @@
 
   <body>
   <h1>vaccination_card Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/vaccination_cardServletCreate'/>" method="post">
 
 	UIN    :<input type="text" name="UIN" value="${form.UIN }"/>
 	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
-	name：<input type="password" name="name" value="${form.name }"/>
+	name：<input type="text" name="name" value="${form.name }"/>
 	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
 	first_dose	：<input type="text" name="first_dose" value="${form.first_dose }"/>

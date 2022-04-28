@@ -22,7 +22,7 @@
 
 
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update vaccination_card</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	UIN    :<input type="text" name="UIN" value="${entity1.UIN }" disabled/>
@@ -40,14 +40,14 @@
 	
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/vaccination_cardServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 				<input type="hidden" name="vaccination_card" value="${entity1.vaccination_card }"/>
 				
 	UIN：<input type="password" name="UIN" value="${form.UIN }"/>
 	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
-	name	：<input type="text" name="name" value="${form.name }"/>
+	name：<input type="text" name="name" value="${form.name }"/>
 	<span style="color: red; font-weight: 900">${errors.name }</span>
 	<br/>
 	first_dose：<input type="password" name="first_dose" value="${form.first_dose }"/>
