@@ -71,12 +71,14 @@ public class vaccination_cardDao {
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
 			
 			String sql = "insert into vaccination_card (UIN,name,first_dose,second_dose,booster_dose,name_of_vaccine) values(?,?,?,?,?,?)";
+
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			preparestatement.setInt(1,form.getUIN());
 			preparestatement.setString(2,form.getName());
 			preparestatement.setDate(3,form.getFirst_dose());
 			preparestatement.setDate(4,form.getSecond_date());
 			preparestatement.setInt(5,form.getBooster_date());
+
 			preparestatement.setString(6,form.getName_of_vaccine());
 			
 		    preparestatement.executeUpdate();
