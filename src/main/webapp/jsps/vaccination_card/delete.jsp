@@ -23,7 +23,7 @@
 
   <body>
   <h1>Delete vaccination_card</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/vaccination_cardServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	
 	Delete UIN   :<input type="text" name="UIN" value="${form.UIN }"/>
