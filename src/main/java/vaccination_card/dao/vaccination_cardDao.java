@@ -34,7 +34,7 @@ public class vaccination_cardDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
-		    String sql = "select * from student_info where UIN = ?";
+		    String sql = "select * from vaccination_card where UIN = ?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,uin_p);
 		    ResultSet resultSet = preparestatement.executeQuery();
@@ -42,7 +42,7 @@ public class vaccination_cardDao {
 		    while(resultSet.next()){
 		    	Integer UIN = Integer.parseInt(resultSet.getString("uin")) ;
 		    	if(UIN.equals(uin_p)){
-		    		entity1.setUIN(uin_p);
+		    		entity1.setUIN(UIN);
 		    		entity1.setName(resultSet.getString("name"));
 		    		entity1.setFirst_dose(java.sql.Date.valueOf(resultSet.getString("first_dose")));
 		    		entity1.setSecond_date(java.sql.Date.valueOf(resultSet.getString("second_dose")));
@@ -97,14 +97,14 @@ public class vaccination_cardDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE vaccination_card SET Name = ?, first_dose = ?, second_dose= ?, booster_dose = ?,name_of_vaccine = ? where UIN = ?;";
+			String sql = "UPDATE vaccination_card SET Name = ?, first_dose = ?, second_dose= ?, booster_dose = ?,name_of_vaccine = ? where UIN = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-			preparestatement.setInt(1,form.getUIN());
-			preparestatement.setString(2,form.getName());
-			preparestatement.setDate(3,form.getFirst_dose());
-			preparestatement.setDate(4,form.getSecond_date());
-			preparestatement.setInt(5,form.getBooster_date());
-			preparestatement.setString(6,form.getName_of_vaccine());
+			preparestatement.setString(1,form.getName());
+			preparestatement.setDate(2,form.getFirst_dose());
+			preparestatement.setDate(3,form.getSecond_date());
+			preparestatement.setInt(4,form.getBooster_date());
+			preparestatement.setString(5,form.getName_of_vaccine());
+			preparestatement.setInt(6,form.getUIN());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

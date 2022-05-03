@@ -25,9 +25,9 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 
-	CRN    :<input type="text" name="crn" value="${entity1.crn }" disabled/>
+	UIN    :<input type="text" name="UIN" value="${entity1.UIN }" disabled/>
 	<br/>
-	UIN of classes：<input type="text" name="uin_of_classes" value="${entity1.uin_of_classes }" disabled/>
+	CRN of classes：<input type="text" name="CRN" value="${entity1.CRN }" disabled/>
 	<br/>
 
 </form>

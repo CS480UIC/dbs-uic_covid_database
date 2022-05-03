@@ -47,7 +47,8 @@ public class vaccination_cardServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1dao.findByUIN(Integer.parseInt((request.getParameter("uin"))));
+				//System.out.println(Integer.parseInt((request.getParameter("UIN"))));
+				entity1 = entity1dao.findByUIN(Integer.parseInt((request.getParameter("UIN"))));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -76,12 +77,12 @@ public class vaccination_cardServletUpdate extends HttpServlet {
 				String[] values = paramMap.get(name);
 				info.add(values[0]);
 			}
-			form.setUIN(Integer.parseInt(info.get(0)));
-			form.setName(info.get(1));
-			form.setFirst_dose(java.sql.Date.valueOf(info.get(2)));
-			form.setSecond_date(java.sql.Date.valueOf(info.get(3)));
-			form.setBooster_date(Integer.parseInt(info.get(4)));
-			form.setName_of_vaccine(info.get(5));
+			form.setUIN(Integer.parseInt(request.getParameter("UIN")));
+			form.setName(request.getParameter("name"));
+			form.setFirst_dose(java.sql.Date.valueOf(request.getParameter("first_dose")));
+			form.setSecond_date(java.sql.Date.valueOf(request.getParameter("second_date")));
+			form.setBooster_date(Integer.parseInt(request.getParameter("booster_date")));
+			form.setName_of_vaccine(request.getParameter("name_of_vaccine"));
 
 			try {
 				entity1dao.update(form);

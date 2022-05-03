@@ -41,7 +41,8 @@ public class vaccination_cardServletRead extends HttpServlet {
 		vaccination_cardDao entity1Dao = new vaccination_cardDao();
 		
 		try {
-			entity1 = entity1Dao.findByUIN(Integer.parseInt(request.getParameter("uin")));
+			//System.out.println("Here");
+			entity1 = entity1Dao.findByUIN(Integer.parseInt(request.getParameter("UIN")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

@@ -26,20 +26,12 @@
 <form action="<c:url value='/uic_classesServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
 	
-<%-- 	CRN    :<input type="text" name="crn" value="${form.crn }"/>
-	<span style="color: red; font-weight: 900">${errors.crn }</span>
-	<br/> --%>
+
 	
-	UIN of classes    :<input type="text" name="uin_of_classes" value="${form.uin_of_classes }"/>
-	<span style="color: red; font-weight: 900">${errors.uin_of_classes }</span>
+	UIN  :<input type="text" name="UIN" value="${form.UIN }"/>
+	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
 	
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read uic_classes"/>
 </form>
   </body>

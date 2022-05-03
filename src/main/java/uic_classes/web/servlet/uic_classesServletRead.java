@@ -41,7 +41,7 @@ public class uic_classesServletRead extends HttpServlet {
 		uic_classesDao entity1Dao = new uic_classesDao();
 		
 		try {
-			entity1 = entity1Dao.findByUIN( Integer.parseInt( request.getParameter("uin_of_classes")));
+			entity1 = entity1Dao.findByUIN( Integer.parseInt(request.getParameter("UIN")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

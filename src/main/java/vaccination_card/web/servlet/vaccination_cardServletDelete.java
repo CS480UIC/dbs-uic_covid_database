@@ -41,7 +41,7 @@ public class vaccination_cardServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByUIN(Integer.parseInt(request.getParameter("uin")));
+				entity1 = entity1Dao.findByUIN(Integer.parseInt(request.getParameter("UIN")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -63,7 +63,7 @@ public class vaccination_cardServletDelete extends HttpServlet {
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("uin"));
+				entity1Dao.delete(request.getParameter("UIN"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {

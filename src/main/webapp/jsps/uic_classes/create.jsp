@@ -22,13 +22,13 @@
   
   <body>
   <h1>uic_classes Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/uic_classesServletCreate'/>" method="post">
 
-	CRN    :<input type="text" name="crn" value="${form.crn }"/>
-	<span style="color: red; font-weight: 900">${errors.crn }</span>
+	UIN    :<input type="text" name="UIN" value="${form.UIN }"/>
+	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
-	UIN of classes：<input type="password" name="uin_of_classes" value="${form.uin_of_classes }"/>
-	<span style="color: red; font-weight: 900">${errors.uin_of_classes }</span>
+	CRN of classes：<input type="text" name="CRN" value="${form.CRN }"/>
+	<span style="color: red; font-weight: 900">${errors.CRN }</span>
 	<br/>
 
 	

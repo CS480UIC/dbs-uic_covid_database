@@ -32,9 +32,9 @@
 	<br/>
 	first_dose	：<input type="text" name="first_dose" value="${entity1.first_dose }" disabled/>
 	<br/>
-	second_dose    :<input type="text" name="second_dose" value="${entity1.second_dose }" disabled/>
+	second_dose  :<input type="text" name="second_date" value="${entity1.second_date }" disabled/>
 	<br/>
-	booster_dose：<input type="text" name="booster_dose" value="${entity1.booster_dose }" disabled/>
+	booster_dose：<input type="text" name="booster_date" value="${entity1.booster_date }" disabled/>
 	<br/>
 	name_of_vaccine	：<input type="text" name="name_of_vaccine" value="${entity1.name_of_vaccine }" disabled/>
 	<br/>

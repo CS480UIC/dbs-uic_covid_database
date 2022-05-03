@@ -22,15 +22,13 @@
 
   <body>
   <h1>Update</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/uic_classesServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	
-	Update CRN  :<input type="text" name="crn" value="${form.crn }"/>
-	<span style="color: red; font-weight: 900">${errors.crn }</span>
+	UIN  :<input type="text" name="UIN" value="${form.UIN }"/>
+	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
-	Update UIN of classes   :<input type="text" name="uin_of_classes" value="${form.uin_of_classes }"/>
-	<span style="color: red; font-weight: 900">${errors.uin_of_classes }</span>
-	<br/>
+
 	
 	<input type="submit" value="Update uic_classes"/>
 </form>

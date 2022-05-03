@@ -41,31 +41,30 @@ public class uic_classesServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		Entity1Service entity1service = new Entity1Service();
-//		Map<String,String[]> paramMap = request.getParameterMap();
-//		Entity1 form = new Entity1();
-//		List<String> info = new ArrayList<String>();
-//
-//		for(String name : paramMap.keySet()) {
-//			String[] values = paramMap.get(name);
-//			info.add(values[0]);
-//		}
-//		form.setUsername(info.get(0));
-//		form.setPassword(info.get(1));
-//		form.setEmail(info.get(2));		
-//		
-//		try {
-//			entity1service.create(form);
-//			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
-//			
-//		} catch (ClassNotFoundException | Entity1Exception e) {
-//			e.printStackTrace();
-//		} catch (InstantiationException e) {
-//			e.printStackTrace();
-//		} catch (IllegalAccessException e) {
-//			e.printStackTrace();
-//		} 
-//		
+		uic_classesService entity1service = new uic_classesService();
+		Map<String,String[]> paramMap = request.getParameterMap();
+		uic_classes form = new uic_classes();
+		List<String> info = new ArrayList<String>();
+
+		for(String name : paramMap.keySet()) {
+			String[] values = paramMap.get(name);
+			info.add(values[0]);
+		}
+		form.setUIN( Integer.parseInt(info.get(0)));	
+		form.setCRN( Integer.parseInt(info.get(1)));	
+		
+		try {
+			entity1service.create(form);
+			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
+			
+		} catch (ClassNotFoundException | uic_classesException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} 
+	
 	}
 
 }

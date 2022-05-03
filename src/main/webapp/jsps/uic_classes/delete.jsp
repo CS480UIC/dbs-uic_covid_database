@@ -23,16 +23,13 @@
   
   <body>
   <h1>Delete uic_classes</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/uic_classesServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	
-	Delete CRN   :<input type="text" name="crn" value="${form.crn }"/>
-	<span style="color: red; font-weight: 900">${errors.crn }</span>
+	UIN   :<input type="text" name="UIN" value="${form.UIN }"/>
+	<span style="color: red; font-weight: 900">${errors.UIN }</span>
 	<br/>
-	
-	Delete UIN of classes   :<input type="text" name="uin_of_classes" value="${form.uin_of_classes }"/>
-	<span style="color: red; font-weight: 900">${errors.uin_of_classes }</span>
-	<br/>
+
 	
 	<input type="submit" value="Delete uic_classes"/>
 </form>

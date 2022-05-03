@@ -40,11 +40,9 @@ public class uic_classesDao {
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	Integer UIN = Integer.parseInt(resultSet.getString("uin"))  ;
-		    	
+		    	Integer UIN = Integer.parseInt(resultSet.getString("uin"));
 		    	System.out.println(UIN + " " + UIN_p);
-		    	if(UIN == UIN_p){
-		    		
+		    	if(UIN.equals(UIN_p)){
 		    		entity1.setUIN(UIN);
 		    		entity1.setCRN(Integer.parseInt(resultSet.getString("crn")));
 		    		System.out.println(Integer.parseInt(resultSet.getString("crn")));
@@ -90,40 +88,40 @@ public class uic_classesDao {
 	 * @throws IllegalAccessException
 	 */
 	public void update(uic_classes form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
-//			
-//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setInt(1,form.getUIN());
-//		    preparestatement.setInt(2,form.getCRN());
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE uic_classes SET CRN = ? where UIN = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setInt(1,form.getCRN());
+		    preparestatement.setInt(2,form.getUIN());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
 	}
 	
 	
 	/**
-	 * @param username
+	 * @param UIN_p
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
-//			
-//			String sql = "delete from entity1 where username = ?";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,username);
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
+	public void delete(String UIN_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
+			
+			String sql = "delete from uic_classes where UIN = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setInt(1, Integer.parseInt(UIN_p));
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
 	}
 }

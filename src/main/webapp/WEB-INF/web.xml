@@ -171,7 +171,19 @@
     <url-pattern>/student_infoServletUpdate</url-pattern>
   </servlet-mapping>
   
-      <servlet>
+        <servlet>
+    <description></description>
+    <display-name>uic_classesServletCreate</display-name>
+    <servlet-name>uic_classesServletCreate</servlet-name>
+    <servlet-class>uic_classes.web.servlet.uic_classesServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uic_classesServletCreate</servlet-name>
+    <url-pattern>/uic_classesServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
     <description></description>
     <display-name>uic_classesServletRead</display-name>
     <servlet-name>uic_classesServletRead</servlet-name>
@@ -180,6 +192,28 @@
   <servlet-mapping>
     <servlet-name>uic_classesServletRead</servlet-name>
     <url-pattern>/uic_classesServletRead</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+    <description></description>
+    <display-name>uic_classesServletDelete</display-name>
+    <servlet-name>uic_classesServletDelete</servlet-name>
+    <servlet-class>uic_classes.web.servlet.uic_classesServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uic_classesServletDelete</servlet-name>
+    <url-pattern>/uic_classesServletDelete</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <description></description>
+    <display-name>uic_classesServletUpdate</display-name>
+    <servlet-name>uic_classesServletUpdate</servlet-name>
+    <servlet-class>uic_classes.web.servlet.uic_classesServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uic_classesServletUpdate</servlet-name>
+    <url-pattern>/uic_classesServletUpdate</url-pattern>
   </servlet-mapping>
   
     <servlet>
