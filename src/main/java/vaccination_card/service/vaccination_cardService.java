@@ -1,6 +1,8 @@
 package vaccination_card.service;
 
 
+import java.util.List;
+
 import vaccination_card.dao.vaccination_cardDao;
 import vaccination_card.domain.vaccination_card;
 
@@ -24,5 +26,10 @@ public class vaccination_cardService {
 		vaccination_card entity1 = entity1Dao.findByUIN(form.getUIN());
 		if(entity1.getUIN()!=null && entity1.getUIN().equals(form.getUIN())) throw new vaccination_cardException("This UIN has been registered!");
 		entity1Dao.add(form);
+	}
+	
+	public List<Object> findDate() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return entity1Dao.findDate();
+		
 	}
 }

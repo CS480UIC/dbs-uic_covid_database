@@ -5,9 +5,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-    <base href="">
     
-    <title>body</title>
+    <title>Initialize Database</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,10 +21,13 @@
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
-    <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<br/>
-    <a href="<c:url value='/displayDoseDate'/>" target="body">Find the First Dose and Second Dose Date</a>&nbsp;&nbsp;
+  <h1>Initialize Database</h1>
+
+<p style="color: red; font-weight: 900">${msg }</p>
+<form action="<c:url value='/UserServletRegister'/>" method="post">
+	
+
+	<input type="submit" value="Initialize DB"/>
+</form>
   </body>
 </html>

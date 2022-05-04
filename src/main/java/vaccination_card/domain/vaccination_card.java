@@ -5,7 +5,7 @@ import java.sql.Date;
 /**
  * User object
  * 
- * @author Aayush Makharia
+ * @author
  * 
  */
 public class vaccination_card {

@@ -8,18 +8,21 @@
 
 </head>
 <body>
-	<h3 align="center"> User Table </h3>
+	<h3 align="center"> Display Dose Date </h3>
 	<table border="1" width="70%" align="center">
 	<tr>
-		<th>name</th>
-		<th>email</th>
+		<th>First_Dose</th>
+		<th>Second_Dose</th>
 	</tr>
-<c:forEach items="${UserList}" var="user">
+<c:forEach items="${vaccination_cardList}" var="vaccination_card">
 	<tr>
-		<td>${user.username}</td>
-		<td>${user.email}</td>
+		<td>${vaccination_card.first_dose}</td>
+		<td>${vaccination_card.second_date}</td>
 	</tr>
 </c:forEach>
 </table>
 </body>
 </html>
+
+
+

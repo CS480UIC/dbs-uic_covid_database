@@ -59,6 +59,8 @@
     <servlet-name>UserServletRegister</servlet-name>
     <url-pattern>/UserServletRegister</url-pattern>
   </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>UserServletLogin</display-name>
@@ -80,6 +82,17 @@
   <servlet-mapping>
     <servlet-name>UserServletLogout</servlet-name>
     <url-pattern>/UserServletLogout</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>InitializeDB</display-name>
+    <servlet-name>InitializeDB</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitializeDB</servlet-name>
+    <url-pattern>/InitializeDB</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -264,14 +277,25 @@
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
-    <servlet-name>findAll</servlet-name>
-    
+    <servlet-name>findAll</servlet-name> 
     <servlet-class>user.web.servlet.findAll</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>displayDoseDate</display-name>
+    <servlet-name>displayDoseDate</servlet-name> 
+    <servlet-class>vaccination_card.web.servlet.displayDoseDate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>displayDoseDate</servlet-name>
+    <url-pattern>/displayDoseDate</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

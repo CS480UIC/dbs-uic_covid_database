@@ -5,9 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
-
-
+import user.domain.User;
 
 //import java.util.ArrayList;
 //import java.util.List;
@@ -133,4 +134,31 @@ public class vaccination_cardDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	
+	public List<Object> findDate() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/uic_covid_database", MySQL_user, MySQL_password);
+			String sql = "select first_dose, second_dose from vaccination_card where Name = \"Vedant\"";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				
+				vaccination_card user = new vaccination_card();
+				user.setFirst_dose( java.sql.Date.valueOf((resultSet.getString("first_dose"))) );
+	    		user.setSecond_date( java.sql.Date.valueOf((resultSet.getString("second_dose"))) );
+	    		
+	    		list.add(user);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
+	
 }
